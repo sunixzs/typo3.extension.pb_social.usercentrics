@@ -41,8 +41,8 @@ requirejs([
     new UserCentricsOptIn({
         container: document.querySelector(".ucoi__wrapper"),
         templateIDs: {
-            facebook: "XYQZBUojc",
-            instagram: "SyUQ54odobQ"
+            facebook: "{templateID for facebook}",
+            instagram: "{templateID for instagram}"
         }
     });
 });
@@ -51,7 +51,7 @@ requirejs([
 
 ## Get the `templateID`s
 
-When usercentrics is loaded open the developer tools and search in `usercentrics.consentTemplates` and search for `templateID`.
+When usercentrics is loaded open the developer tools -> console and search in `usercentrics.consentTemplates` for `templateID`.
 
 ## Repository
 
