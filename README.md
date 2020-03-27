@@ -49,14 +49,19 @@ requirejs([
 </script>
 ```
 
-## Get the `templateID`s
+## Get the templateID
 
-When usercentrics is loaded open the developer tools -> console and search in `usercentrics.consentTemplates` for `templateID`.
+When usercentrics is loaded open the _developer tools -> console_ and search in `usercentrics.consentTemplates` for `templateID`.
 
-## Repository
+## Links
 
+* pb_social plugin  
+https://extensions.typo3.org/extension/pb_social/
+* This repository:  
 https://github.com/sunixzs/typo3.extension.pb_social.usercentrics/
+* Some usercentrics documentation:  
+https://docs.usercentrics.com/
 
 ## License
 
-Do what you want, but don't ask for compensation. I don't guarantee anything :-)
+Do what you want, but in your own risk. I don't guarantee anything :-)
