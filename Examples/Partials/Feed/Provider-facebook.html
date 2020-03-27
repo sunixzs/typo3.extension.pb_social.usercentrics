@@ -1,0 +1,21 @@
+<f:section name="Default">
+    <div class="pb-list-item-wrap {f:if(condition:iteration.isEven, then:'even', else:'odd')}">
+        <div class="pb-list-item pb-list-item-instagram">
+            <a class="item" href="{feed.link}" target="_blank">
+                <f:if condition="{feed.raw.picture}">
+                    <f:then>
+                        <f:if condition="{fb_full_res}">
+                            <f:then><span class="image full_resolution" data-uc-background-image="{feed.raw.full_picture}"></span></f:then>
+                            <f:else><span class="image" data-uc-background-image="{feed.raw.picture}"></span></f:else>
+                        </f:if>
+                    </f:then>
+                    <f:else>
+                        <span class="image placeholder-image"></span>
+                    </f:else>
+                </f:if>
+                <span class="icon"><i class="fa fa-facebook-square"></i></span>
+                <f:if condition="{feed.text}"><span class="text">{feed.text}</span></f:if>
+            </a>
+        </div>
+    </div>
+</f:section>

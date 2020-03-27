@@ -1,0 +1,119 @@
+.ucoi-wrapper {
+    position: relative;
+}
+
+/*
+Opt-in layer
+*/
+
+.ucoi__layer__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ucoi__layer__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border-radius: 3px;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background-color: black;
+    color: white;
+}
+
+.ucoi__layer__title {
+    font-size: 120%;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.ucoi__layer__info {
+    font-size: 80%;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+}
+
+.ucoi__layer__agree {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: 0.2em 0.5em;
+    font-size: 100%;
+    cursor: pointer;
+    transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
+    vertical-align: middle;
+}
+
+.ucoi__layer__agree:hover {
+    background-color: black;
+    color: white;
+    vertical-align: middle;
+}
+
+.ucoi__layer__disagree {
+    color: white !important;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+/*
+Image replacement
+*/
+
+/* The wrap around the button */
+.ucoi__imagebutton__button-parent {
+    position: relative;
+}
+
+/* The button to open the opt-in */
+.ucoi__imagebutton__button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: darkgrey;
+    color: grey;
+}
+
+.ucoi__imagebutton__button .svg {
+    width: 100%;
+    height: 100%;
+}
+
+.ucoi__imagebutton__button .svg__background {
+    fill: rgba(0, 0, 0, 0.1);
+}
+
+.ucoi__imagebutton__button .svg__image {
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.ucoi__imagebutton__button .svg__check__circle {
+    fill: rgb(229, 209, 0);
+    transform: scale(70%) translate(23%, 18%);
+}
+
+.ucoi__imagebutton__button .svg__check__checkmark {
+    fill: white;
+    transform: scale(70%) translate(23%, 18%);
+}
+
+.ucoi__imagebutton__button .svg__text {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 80%;
+}
+
+.ucoi__imagebutton__button:hover  .svg__check__circle {
+    fill: green;
+}

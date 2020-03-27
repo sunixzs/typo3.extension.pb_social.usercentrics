@@ -1,0 +1,11 @@
+<f:section name="Default">
+    <div class="pb-list-item-wrap {f:if(condition:iteration.isEven, then:'even', else:'odd')}">
+        <div class="pb-list-item pb-list-item-instagram">
+            <a class="item" href="{feed.link}" target="_blank">
+                <span class="image" data-uc-background-image="{feed.image}"></span>
+                <span class="icon"><i class="fa fa-instagram"></i></span>
+                <f:if condition="{feed.text}"><span class="text">{feed.text}</span></f:if>
+            </a>
+        </div>
+    </div>
+</f:section>

@@ -1,0 +1,27 @@
+<f:layout name="Default"/>
+
+<f:section name="main">
+    <div class="pb-list ucoi-wrapper">
+        <f:spaceless><f:for each="{feeds}" as="feed" iteration="i"><f:render partial="Feed/Provider-{feed.provider}" section="Default" arguments="{feed: feed, fb_full_res: fb_full_res, iteration:i}"/></f:for></f:spaceless>
+    </div>
+    <f:if condition="{asynch_request}">
+        <div class="button__wrap">
+            <div id="load_more_posts" class="button" data-limit="{asynch_show}" data-url="{f:uri.action(action: 'showSocialFeed', arguments: {ajax: 'true'}, noCacheHash: 1, absolute: 1)}">
+                <f:translate key="LLL:EXT:pb_social/Resources/Private/Language/de.locallang_db.xlf:general.asynchButtonText" />
+            </div>
+        </div>
+    </f:if>
+    <script>
+    requirejs([
+        "../Plugins/pb_social/Resources/Public/UserCentricsOptIn", 
+        "css!../Plugins/pb_social/Resources/Public/UserCentricsOptIn.css", 
+        "css!../Stylesheets/Extension/pb_social.css"], function (UserCentricsOptIn) {
+        new UserCentricsOptIn({
+            templateIDs: {
+                facebook: "XYQZBUojc",
+                instagram: "SyUQ54odobQ"
+            }
+        });
+    });
+    </script>
+</f:section>
