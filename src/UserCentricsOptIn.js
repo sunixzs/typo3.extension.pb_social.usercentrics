@@ -60,10 +60,10 @@
             }
 
             if (window["usercentrics"].isInitialized) {
-                onUserCentricsIsReady();
+                onUserCentricsIsReady(this);
             } else {
                 window["usercentrics"].onViewInit = function() {
-                    onUserCentricsIsReady();
+                    onUserCentricsIsReady(this);
                 };
             }
         }
@@ -311,7 +311,7 @@
             }
 
             // wait for UC
-            let UCH = new UserCentricsHandler(() => {
+            new UserCentricsHandler((UCH) => {
                 if (UCH.hasConsent()) {
                     // consent was given before
                     IB.showSocialMediaImages();
