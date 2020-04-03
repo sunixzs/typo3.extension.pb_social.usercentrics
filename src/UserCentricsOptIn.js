@@ -152,11 +152,11 @@
             });
 
             let containerElements = [
-                new Element("DIV", {
-                    class: "ucoi__layer__icon",
-                    innerHTML:
-                        '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 217.8 137.2" style="enable-background:new 0 0 217.8 137.2;" xml:space="preserve"><g><circle style="fill:currentColor" cx="133.7" cy="52.6" r="13.1"/><path style="fill:currentColor" d="M0,0v137.2h217.8V0H0z M211.6,131h-4.1l-45.1-48.5L127,120.6l-54-65.1L10.5,131H6.2V6.2h205.5V131z"/></g></svg>'
-                }),
+                // new Element("DIV", {
+                //     class: "ucoi__layer__icon",
+                //     innerHTML:
+                //         '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 217.8 137.2" style="enable-background:new 0 0 217.8 137.2;" xml:space="preserve"><g><circle style="fill:currentColor" cx="133.7" cy="52.6" r="13.1"/><path style="fill:currentColor" d="M0,0v137.2h217.8V0H0z M211.6,131h-4.1l-45.1-48.5L127,120.6l-54-65.1L10.5,131H6.2V6.2h205.5V131z"/></g></svg>'
+                // }),
                 new Element("DIV", {
                     class: "ucoi__layer__title",
                     innerText: "Externer Inhalt"
